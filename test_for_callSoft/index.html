@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-switch.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+    </head>
+    <body>
+    <div class="main">
+        <form action="#">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-info dropdown-toggle " id="btn_first" data-toggle="dropdown">
+                                        <span>Belgium</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Another action2</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" id="firstInput" name="first_field"
+                                       placeholder="ZIP code,Address">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-info dropdown-toggle" id="btn_second" data-toggle="dropdown">
+                                        <span>Belgium</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Another action2</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" id="secondInput" name="second_field" placeholder="ZIP code,Address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex_end">
+                        <div class="checkboxing col-md-2 col-lg-2 col-sm-3">
+                            <input type="checkbox" data-off-text="PALLET" data-on-text="PARCELL" checked="true" class="BSswitch" name="my-checkbox">
+                        </div>
+                        <div class="weight col-md-2 col-md-offset-1">
+                            <h4>Weight:</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="weight" placeholder="Username">
+                                <span class="input-group-addon">Kg</span>
+                            </div>
+                        </div>
+                        <div class="length col-md-2 ">
+                            <h4>Length:</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="length" placeholder="Username">
+                                <span class="input-group-addon">Cm</span>
+                            </div>
+                        </div>
+                        <div class="width col-md-2 ">
+                            <h4>Width:</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="width" placeholder="Username">
+                                <span class="input-group-addon">Cm</span>
+                            </div>
+                        </div>
+                        <div class="height col-md-2">
+                            <h4>Height:</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="height" placeholder="Username">
+                                <span class="input-group-addon">Cm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="origin">
+                <div class="dopOption">
+                    <div class="container-fluid">
+                        <div class="row flex_end">
+                            <div class="checkboxing col-md-2 " id="origin_check_item">
+                                <input type="checkbox" data-off-text="PALLET" data-on-text="PARCELL" checked="false" class="BSswitch" name="my-checkbox" id="origin_check_input">
+                            </div>
+                            <div class="Number col-md-2  col-md-offset-1 col-lg-offset-1">
+                                <h4>Number of pallets:</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control Number" name="Number_pallets" placeholder="Username">
+                                    <span class="input-group-addon">Kg</span>
+                                </div>
+                            </div>
+                            <div class="height_copy col-md-2">
+                                <h4>Height:</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control height_copy" name="Height_pallets" placeholder="Username">
+                                    <span class="input-group-addon">Cm</span>
+                                </div>
+                            </div>
+                            <div class="weight_for_pallet col-md-2 ">
+                                <h4>Weight for pallet:</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control weight_for_pallet" name="Weight_pallets" placeholder="Username">
+                                    <span class="input-group-addon">Cm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add_remove_option">
+                <div class="container-fluid">
+                    <div class="row ">
+                        <div class="move col-lg-3">
+                            <input class="btn btn-default" type="submit" id="Remove_parcel" value="- Remove">
+                            <input class="btn btn-default" type="submit" id="Add_parcel" value="+ Add parcel or pallet">
+                        </div>
+                        <div class="book_input  col-lg-9">
+                            <input class="btn btn-danger" type="submit" value="Quote & Book">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/bootstrap-switch.js"></script>
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
+        <!--<script src="js/plugins.js"></script>-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
