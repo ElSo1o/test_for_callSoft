@@ -17,14 +17,14 @@ $(document).ready(function () {
     function addChild() {
         $('#Add_parcel').click(function () {
             event.preventDefault();
-            $(".dopOption:last-child").clone().addClass("newElement").appendTo(".origin");
+            $(".dopOption:last-child").clone().addClass("newElement").appendTo("origin");
             var swremove = $(".newElement:last > .container-fluid > .flex_end > .checkboxing > .bootstrap-switch");
             var inputClon = $("#origin_check_input").clone().addClass("newCheck");
-            var test = $('.newElement:last > .container-fluid > .flex_end > .checkboxing');
+            var addInput = $('.newElement:last > .container-fluid > .flex_end > .checkboxing');
            // var test_inp = $('.newElement').last();
             if (swremove){
                 $(swremove).remove();
-                inputClon.appendTo(test);
+                inputClon.appendTo(addInput);
                 $(".BSswitch").bootstrapSwitch();
             }
 
